@@ -8,12 +8,6 @@
       color : black;
       text-decoration : none;
     }
-    .saw {
-      color : gray;
-    }
-    #active {
-      color : blue;
-    }
     h1 {
       font-size : 45px;
       text-align : center;
@@ -26,7 +20,6 @@
       width : 100px;
       margin : 0;
       padding : 20px;
-      padding-left : 33px;
     }
     body{
       margin : 0;
@@ -35,8 +28,22 @@
       display : grid;
       grid-template-columns : 150px 1fr;
     }
+    #grid ol{
+      padding-left : 33px;
+    }
     #article{
       padding-left : 25px;
+    }
+    @media(max-width : 800px){
+      #grid{
+        display : block;
+      }
+      ol{
+        border-right : none;
+      }
+      h1{
+        border-bottom : none;
+      }
     }
   </style>
 </head>
